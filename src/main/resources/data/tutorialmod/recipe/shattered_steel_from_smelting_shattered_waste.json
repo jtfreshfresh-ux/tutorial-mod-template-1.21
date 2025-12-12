@@ -5,7 +5,7 @@
   "experience": 0.4,
   "group": "shattered_waste",
   "ingredient": {
-    "item": "tutorialmod:shttered_waste"
+    "item": "tutorialmod:shattered_waste"
   },
   "result": {
     "id": "tutorialmod:shattered_steel"
