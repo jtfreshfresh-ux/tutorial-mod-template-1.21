@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorial:shattered_steel_block"
+          "name": "tutorialmod:shattered_steel_block"
         }
       ],
       "rolls": 1.0

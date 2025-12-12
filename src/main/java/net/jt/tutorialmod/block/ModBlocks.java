@@ -18,12 +18,12 @@ public class ModBlocks {
 
 
     public static final Block SHATTERED_STEEL_BLOCK = register("shattered_steel_block",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-                    AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.METAL)));
+            new Block(AbstractBlock.Settings.create().strength(1.5f)
+                    .requiresTool().sounds(BlockSoundGroup.ANVIL)));
 
         public static final Block SHATTERED_WASTE_BLOCK = register("shattered_waste_block",
-               new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-                       AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.METAL)));
+               new ExperienceDroppingBlock(UniformIntProvider.create(1,1),
+                       AbstractBlock.Settings.create().strength(0.75f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
 
         private static  Block register(String name, Block block) {
