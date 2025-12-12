@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "category": "misc",
-  "cooktime": 300,
+  "cooktime": 150,
   "experience": 0.4,
   "group": "shattered_waste",
   "ingredient": {
