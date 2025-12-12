@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://jt.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/jtfreshfresh-ux/tutorial-mod-template-1.21"
 	},
 	"license": "MIT",
 	"icon": "assets/tutorialmod/icon.png",
