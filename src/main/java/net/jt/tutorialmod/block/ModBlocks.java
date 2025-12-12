@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jt.tutorialmod.TutorialMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.DropperBlock;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,12 +19,12 @@ public class ModBlocks {
 
 
     public static final Block SHATTERED_STEEL_BLOCK = register("shattered_steel_block",
-            new Block(AbstractBlock.Settings.create().strength(1.5f)
+            new Block(AbstractBlock.Settings.create().strength(3.0f, 1200.0f)
                     .requiresTool().sounds(BlockSoundGroup.ANVIL)));
 
-        public static final Block SHATTERED_WASTE_BLOCK = register("shattered_waste_block",
-               new ExperienceDroppingBlock(UniformIntProvider.create(1,1),
-                       AbstractBlock.Settings.create().strength(0.75f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+    public static final Block SHATTERED_WASTE_BLOCK = register("shattered_waste_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3.0f, 1200.0f).requiresTool()));
 
 
         private static  Block register(String name, Block block) {

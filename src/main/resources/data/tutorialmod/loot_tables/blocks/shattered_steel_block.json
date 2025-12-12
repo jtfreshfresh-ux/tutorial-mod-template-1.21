@@ -11,10 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:shattered_steel_block"
+          "name": "tutorialmod:shattered_steel"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "tutorialmod:blocks/shattered_steel"
 }
