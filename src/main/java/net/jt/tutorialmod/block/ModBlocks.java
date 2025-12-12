@@ -23,9 +23,8 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.ANVIL)));
 
     public static final Block SHATTERED_WASTE_BLOCK = register("shattered_waste_block",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-                    AbstractBlock.Settings.create().strength(3.0f, 1200.0f).requiresTool()));
-
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),
+                    AbstractBlock.Settings.create().strength(2.5f, 1200.0f).requiresTool()));
 
         private static  Block register(String name, Block block) {
             registerBlockItem(name, block);

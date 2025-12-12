@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"
@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:shattered_steel"
+          "name": "tutorialmod:shattered_steel_block"
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
-  "random_sequence": "tutorialmod:blocks/shattered_steel"
+  "random_sequence": "tutorialmod:blocks/shattered_steel_block"
 }
