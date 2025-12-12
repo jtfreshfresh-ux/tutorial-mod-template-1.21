@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cooktime": 0.2,
+  "experience": 0.2,
+  "group": "shattered_waste",
+  "ingredient": {
+    "item"
+  }
+,}
