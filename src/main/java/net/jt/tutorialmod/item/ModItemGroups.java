@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItem.SHATTERED_STEEL);
                         entries.add(ModItem.SHATTERED_WASTE);
 
+                        entries.add(ModItem.CHISEL);
+
                     }).build()
     );
 
@@ -33,6 +35,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SHATTERED_WASTE_BLOCK);
                         entries.add(ModBlocks.SHATTERED_STEEL_BLOCK);
+
 
                     }).build()
     );
