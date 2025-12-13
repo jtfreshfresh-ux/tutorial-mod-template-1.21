@@ -36,6 +36,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SHATTERED_WASTE_BLOCK);
                         entries.add(ModBlocks.SHATTERED_STEEL_BLOCK);
 
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+
+
+
 
                     }).build()
     );

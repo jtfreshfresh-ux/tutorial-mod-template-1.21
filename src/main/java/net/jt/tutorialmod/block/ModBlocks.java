@@ -2,6 +2,7 @@ package net.jt.tutorialmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.jt.tutorialmod.TutorialMod;
+import net.jt.tutorialmod.block.custom.MagicBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.DropperBlock;
@@ -25,6 +26,8 @@ public class ModBlocks {
     public static final Block SHATTERED_WASTE_BLOCK = register("shattered_waste_block",
             new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),
                     AbstractBlock.Settings.create().strength(2.5f, 1200.0f).requiresTool()));
+    public static final Block MAGIC_BLOCK = register("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
         private static  Block register(String name, Block block) {
             registerBlockItem(name, block);
