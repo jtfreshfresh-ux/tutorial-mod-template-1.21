@@ -8,20 +8,17 @@
 
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
-
-
-
   "block.tutorialmod.magic_block": "Magic Block",
 
   "block.tutorialmod.shattered_waste_block": "Block of Shattered Waste",
   "block.tutorialmod.shattered_steel_block": "Block of Shattered Steel",
 
   "itemGroup.tutorialmod.shattered_steel_items": "Shattered Steel Items",
-
   "itemGroup.tutorialmod.shattered_steel_blocks": "Shattered Steel Blocks",
 
   "tootip.tutorialmod.magic_block.tooltip": "This block is very, very, §9MAGICAL§r",
-  "tootip.tutorialmod.magic_block.tooltip.2": "Transforms §7Items§r to §9Shattered§r §9Steel§r when dropped on",
+  "tootip.tutorialmod.magic_block.tooltip.1": "Transforms §7Items§r to §9Shattered§r §9Steel§r when dropped on",
 
   "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information!",
-  "tooltip.tutorialmod.chisel.shift_down": "This item chisels blocks into bricks!"}
+  "tooltip.tutorialmod.chisel.shift_down": "This item chisels blocks into bricks!"
+}

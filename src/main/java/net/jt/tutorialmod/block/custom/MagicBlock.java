@@ -1,6 +1,8 @@
 package net.jt.tutorialmod.block.custom;
 
+import net.jt.tutorialmod.util.ModTags;
 import net.jt.tutorialmod.item.ModItem;
+import net.jt.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -8,9 +10,9 @@ import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -34,20 +36,22 @@ public class MagicBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (entity instanceof ItemEntity item) {
-            if (item.getStack().getItem() == ModItem.SHATTERED_WASTE) {
-                item.setStack(new ItemStack(ModItem.SHATTERED_STEEL, item.getStack().getCount()));
+        if(entity instanceof ItemEntity itemEntity) {
+            if(isValidItem(itemEntity.getStack())) {
+                itemEntity.setStack(new ItemStack(ModItem.SHATTERED_STEEL, itemEntity.getStack().getCount()));
             }
         }
 
         super.onSteppedOn(world, pos, state, entity);
     }
 
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
+    }
+
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType options) {
-        tooltip.add(Text.translatable("tootip.tutorialmod.magic_block.tooltip"));
-        tooltip.add(Text.translatable("tootip.tutorialmod.magic_block.tooltip.2"));
-
+        tooltip.add(Text.translatable("tooltip.tutorialmod.magic_block.tooltip"));
         super.appendTooltip(stack, context, tooltip, options);
     }
 }
