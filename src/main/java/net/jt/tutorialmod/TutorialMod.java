@@ -2,6 +2,7 @@ package net.jt.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.jt.tutorialmod.block.ModBlocks;
 import net.jt.tutorialmod.item.ModItem;
 import net.jt.tutorialmod.item.ModItemGroups;
@@ -20,5 +21,7 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItem.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE. add(ModItem.STARLIGHT_ASHES, 600);
 	}
 }

@@ -6,6 +6,8 @@
 
   "item.tutorialmod.cauliflower": "Cauliflower",
 
+  "item.tutorialmod.starlight_ashes": "Starlight Ashes",
+
 
 
 
@@ -16,5 +18,10 @@
 
   "itemGroup.tutorialmod.shattered_steel_items": "Shattered Steel Items",
 
-  "itemGroup.tutorialmod.shattered_steel_blocks": "Shattered Steel Blocks"
-}
+  "itemGroup.tutorialmod.shattered_steel_blocks": "Shattered Steel Blocks",
+
+  "tootip.tutorialmod.magic_block.tooltip": "This block is very, very, §9MAGICAL§r",
+  "tootip.tutorialmod.magic_block.tooltip.2": "Transforms §7Items§r to §9Shattered§r §9Steel§r when dropped on",
+
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information!",
+  "tooltip.tutorialmod.chisel.shift_down": "This item chisels blocks into bricks!"}

@@ -40,6 +40,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
 
+                        entries.add(ModItem.STARLIGHT_ASHES);
 
 
 

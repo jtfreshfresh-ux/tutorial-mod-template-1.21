@@ -16,6 +16,8 @@ public class ModItem {
 
     public static final Item CHISEL = register("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
+    public static final Item STARLIGHT_ASHES = register("starlight_ashes", new Item(new Item.Settings()));
+
     public static final Item CAULIFLOWER = register("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CUALIFLOWER)));
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
