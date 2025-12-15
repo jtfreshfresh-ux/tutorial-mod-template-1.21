@@ -14,8 +14,9 @@ public class ModItem {
 
     public static final Item SHATTERED_STEEL = register( "shattered_steel", new Item(new Item.Settings()));
 
-    public  static final Item CHISEL = register("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+    public static final Item CHISEL = register("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
+    public static final Item CAULIFLOWER = register("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CUALIFLOWER)));
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }

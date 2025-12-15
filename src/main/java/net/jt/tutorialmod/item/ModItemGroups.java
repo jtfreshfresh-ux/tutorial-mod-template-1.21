@@ -23,6 +23,8 @@ public class ModItemGroups {
 
                         entries.add(ModItem.CHISEL);
 
+                        entries.add(ModItem.CAULIFLOWER);
+
                     }).build()
     );
 

@@ -1,14 +1,20 @@
 {
   "item.tutorialmod.shattered_waste": "Shattered Waste",
   "item.tutorialmod.shattered_steel": "Shattered Steel",
+
   "item.tutorialmod.chisel": "Chisel",
 
+  "item.tutorialmod.cauliflower": "Cauliflower",
 
 
+
+
+  "block.tutorialmod.magic_block": "Magic Block",
 
   "block.tutorialmod.shattered_waste_block": "Block of Shattered Waste",
   "block.tutorialmod.shattered_steel_block": "Block of Shattered Steel",
+
   "itemGroup.tutorialmod.shattered_steel_items": "Shattered Steel Items",
-  "itemGroup.tutorialmod.shattered_steel_blocks": "Shattered Steel Blocks",
-  "block.tutorialmod.magic_block": "Magic Block"
+
+  "itemGroup.tutorialmod.shattered_steel_blocks": "Shattered Steel Blocks"
 }
