@@ -7,8 +7,14 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
+import java.security.cert.CRLException;
+
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_BAN_TOOL = createTag("needs_ban_tool");
+        public static final TagKey<Block> INCORRECT_FOR_BAN_TOOL = createTag("incorrect_for_ban_tool");
+        public static final TagKey<Block> NEEDS_SHATTERED_STEEL_TOOL = createTag("needs_shattered_steel_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SHATTERED_STEEL_TOOL = createTag("incorrect_for_shattered_steel_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, name));

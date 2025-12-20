@@ -7,6 +7,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.EntityNbtDataSource;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -24,6 +25,10 @@ public class ModItemGroups {
                         entries.add(ModItem.CHISEL);
 
                         entries.add(ModItem.CAULIFLOWER);
+
+                        entries.add(ModItem.BAN_SWORD);
+                        entries.add(ModItem.SHATTERED_STEEL_SWORD);
+
 
                     }).build()
     );

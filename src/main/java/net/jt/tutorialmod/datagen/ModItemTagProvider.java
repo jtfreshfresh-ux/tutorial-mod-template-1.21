@@ -6,6 +6,7 @@ import net.jt.tutorialmod.item.ModItem;
 import net.jt.tutorialmod.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,5 +22,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.APPLE);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItem.BAN_SWORD)
+                .add(ModItem.SHATTERED_STEEL_SWORD);
     }
 }

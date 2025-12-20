@@ -31,5 +31,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItem.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItem.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItem.STARLIGHT_ASHES, Models.GENERATED);
+
+        itemModelGenerator.register(ModItem.BAN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItem.SHATTERED_STEEL_SWORD, Models.HANDHELD);
+
+
     }
 }

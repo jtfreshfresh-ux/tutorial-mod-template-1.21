@@ -5,6 +5,7 @@ import net.jt.tutorialmod.TutorialMod;
 import net.jt.tutorialmod.item.custom.ChiselItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -19,6 +20,15 @@ public class ModItem {
     public static final Item STARLIGHT_ASHES = register("starlight_ashes", new Item(new Item.Settings()));
 
     public static final Item CAULIFLOWER = register("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CUALIFLOWER)));
+
+    public static final Item BAN_SWORD = register("ban_sword",
+            new SwordItem(ModToolMaterials.BAN, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BAN, 4, -2.4f))));
+
+    public static final Item SHATTERED_STEEL_SWORD = register("shattered_steel_sword",
+            new SwordItem(ModToolMaterials.SHATTERED_STEEL, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SHATTERED_STEEL, 3, -2.4f))));
+
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }

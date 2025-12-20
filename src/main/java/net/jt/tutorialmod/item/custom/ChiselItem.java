@@ -1,5 +1,6 @@
 package net.jt.tutorialmod.item.custom;
 
+import net.jt.tutorialmod.component.ModDateComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -19,6 +20,7 @@ import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 
 public class ChiselItem extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
@@ -46,6 +48,7 @@ public class ChiselItem extends Item {
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
 
+                context.getStack().set(ModDateComponentTypes.CORDINATES, context.getBlockPos());
             }
         }
 
@@ -58,6 +61,10 @@ public class ChiselItem extends Item {
              tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down"));
         } else {
              tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        if (stack.get(ModDateComponentTypes.CORDINATES) != null) {
+            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDateComponentTypes.CORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);

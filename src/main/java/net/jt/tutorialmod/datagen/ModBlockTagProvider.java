@@ -3,6 +3,7 @@ package net.jt.tutorialmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.jt.tutorialmod.block.ModBlocks;
+import net.jt.tutorialmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -25,6 +26,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SHATTERED_STEEL_BLOCK)
                 .add(ModBlocks.SHATTERED_WASTE_BLOCK);
 
-
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BAN_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }
