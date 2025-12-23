@@ -1,10 +1,10 @@
 package net.jt.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.jt.tutorialmod.block.ModBlocks;
 import net.jt.tutorialmod.component.ModDateComponentTypes;
+import net.jt.tutorialmod.event.ModCombatEvents;
 import net.jt.tutorialmod.item.ModItem;
 import net.jt.tutorialmod.item.ModItemGroups;
 import org.slf4j.Logger;
@@ -23,6 +23,7 @@ public class TutorialMod implements ModInitializer {
 		ModItem.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModDateComponentTypes.registerDataComponentTypes();
+		ModCombatEvents.register();
 
 		FuelRegistry.INSTANCE. add(ModItem.STARLIGHT_ASHES, 600);
 	}
