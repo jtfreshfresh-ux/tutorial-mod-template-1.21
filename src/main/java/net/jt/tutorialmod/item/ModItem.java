@@ -25,10 +25,6 @@ public class ModItem {
             new SwordItem(ModToolMaterials.BAN, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BAN, 4, -2.4f))));
 
-    public static final Item SHATTERED_STEEL_SWORD = register("shattered_steel_sword",
-            new SwordItem(ModToolMaterials.SHATTERED_STEEL, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SHATTERED_STEEL, 3, -2.4f))));
-
     private static Item register(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }

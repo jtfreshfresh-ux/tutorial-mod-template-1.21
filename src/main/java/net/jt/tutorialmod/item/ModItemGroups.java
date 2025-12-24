@@ -27,7 +27,6 @@ public class ModItemGroups {
                         entries.add(ModItem.CAULIFLOWER);
 
                         entries.add(ModItem.BAN_SWORD);
-                        entries.add(ModItem.SHATTERED_STEEL_SWORD);
 
 
                     }).build()
